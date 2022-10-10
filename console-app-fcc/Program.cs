@@ -18,10 +18,16 @@ namespace console_app_fcc
 
             Console.WriteLine("");
 
-            Console.WriteLine("There once a man named Raj");
-            Console.WriteLine("He was 36 years old");
-            Console.WriteLine("He really like the name Raj");
-            Console.WriteLine("He wishes he was 25");
+            string characterName = "Raj";
+            int characterAge = 36;
+
+            // Dynamic Data interpolation - Concatenation method
+            Console.WriteLine("There once a man named " + characterName);
+            Console.WriteLine("He was " + characterAge + " years old");
+
+            // Dynamic Data interpolation - Placeholder method
+            Console.WriteLine("He really like the name {0}", characterName);
+            Console.WriteLine("He didnt like being {0}", characterAge);
 
             // Pause the console without closing
             Console.ReadLine();
