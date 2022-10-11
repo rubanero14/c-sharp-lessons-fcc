@@ -10,24 +10,18 @@ namespace console_app_fcc
     {
         static void Main(string[] args)
         {
-            string color, pluralNoun, celebrity;
+            // to create array variable first declare type followed by [] to signify this is array variable contains number values, followed by the array name
+            // on the right hand side ofthe expression, contrary to JavaScript convention for array container '[]', C# uses {} as array
+            int[] luckyNumbers = { 1, 3, 6, 9, 12 };
+            string[] friends = new string[2];
 
-            // Entering color by user
-            Console.Write("Enter a color: ");
-            color = Console.ReadLine();
+            friends[0] = "Lalitha";
+            friends[1] = "Sham";
 
-            // Entering pluralNoun by user
-            Console.Write("Enter plural noun: ");
-            pluralNoun = Console.ReadLine();
+            luckyNumbers[2] = 4;
 
-            // Entering celebrity by user
-            Console.Write("Enter celebrity name: ");
-            celebrity = Console.ReadLine();
-
-            // MadLibs
-            Console.WriteLine("Roses are {0}", color);
-            Console.WriteLine("{0}s are blue", pluralNoun);
-            Console.WriteLine("I Love {0}", celebrity);
+            Console.WriteLine(luckyNumbers[2]);
+            Console.WriteLine(friends);
 
             // Console.ReadLine() acts as prompt that watches, reads and returns for user input as string and also pauses the console without closing
             Console.ReadLine();
