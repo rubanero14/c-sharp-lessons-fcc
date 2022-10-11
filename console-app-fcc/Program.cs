@@ -10,16 +10,24 @@ namespace console_app_fcc
     {
         static void Main(string[] args)
         {
-            // Convert string to number
-            int num = Convert.ToInt32("32");
-            Console.WriteLine(num + 6);
+            string color, pluralNoun, celebrity;
 
-            // Perform user input and convert to number type and store it, finally display
-            Console.Write("Enter first number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter second number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine(num1 + num2);
+            // Entering color by user
+            Console.Write("Enter a color: ");
+            color = Console.ReadLine();
+
+            // Entering pluralNoun by user
+            Console.Write("Enter plural noun: ");
+            pluralNoun = Console.ReadLine();
+
+            // Entering celebrity by user
+            Console.Write("Enter celebrity name: ");
+            celebrity = Console.ReadLine();
+
+            // MadLibs
+            Console.WriteLine("Roses are {0}", color);
+            Console.WriteLine("{0}s are blue", pluralNoun);
+            Console.WriteLine("I Love {0}", celebrity);
 
             // Console.ReadLine() acts as prompt that watches, reads and returns for user input as string and also pauses the console without closing
             Console.ReadLine();
