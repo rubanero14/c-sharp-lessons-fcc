@@ -10,21 +10,24 @@ namespace console_app_fcc
     {
         static void Main(string[] args)
         {
-            // to create array variable first declare type followed by [] to signify this is array variable contains number values, followed by the array name
-            // on the right hand side ofthe expression, contrary to JavaScript convention for array container '[]', C# uses {} as array
-            int[] luckyNumbers = { 1, 3, 6, 9, 12 };
-            string[] friends = new string[2];
-
-            friends[0] = "Lalitha";
-            friends[1] = "Sham";
-
-            luckyNumbers[2] = 4;
-
-            Console.WriteLine(luckyNumbers[2]);
-            Console.WriteLine(friends);
+            // Calling here the method constructed below the function Main
+            // Whenever code is compiled and executed, the system only runs any code stated within Main method
+            SayHi();
+            SayHi();
+            SayHi();
 
             // Console.ReadLine() acts as prompt that watches, reads and returns for user input as string and also pauses the console without closing
             Console.ReadLine();
+        }
+
+        // Creating new method, static keyword used to invoke a method that returns something, keyword void is to maintain return 'nothing', followed by the method name with Cap letter on each word
+        static void SayHi(/*string name*/) {
+            Console.Write("Insert your name here: ");
+            string name = Console.ReadLine();
+            Console.Write("Insert your age here: ");
+            string age = Console.ReadLine();
+
+            Console.WriteLine("Hello {0} and your age is {1}!", name, age);
         }
     }
 }
