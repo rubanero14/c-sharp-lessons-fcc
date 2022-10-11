@@ -10,24 +10,14 @@ namespace console_app_fcc
     {
         static void Main(string[] args)
         {
-            // Logging output to the console
-            Console.WriteLine("   /|");
-            Console.WriteLine("  / |");
-            Console.WriteLine(" /  |");
-            Console.WriteLine("/___|");
+            // Learning different data types
+            string phrase = "Hello";
+            char grade = 'A';
+            int age = 36;
+            double gpa = 4.0;
+            bool isMale = true;
 
-            Console.WriteLine("");
-
-            string characterName = "Raj";
-            int characterAge = 36;
-
-            // Dynamic Data interpolation - Concatenation method
-            Console.WriteLine("There once a man named " + characterName);
-            Console.WriteLine("He was " + characterAge + " years old");
-
-            // Dynamic Data interpolation - Placeholder method
-            Console.WriteLine("He really like the name {0}", characterName);
-            Console.WriteLine("He didnt like being {0}", characterAge);
+            Console.WriteLine("{0} {1} {2} {3} {4}", phrase, grade, age, gpa, isMale);
 
             // Pause the console without closing
             Console.ReadLine();
