@@ -10,16 +10,18 @@ namespace console_app_fcc
     {
         static void Main(string[] args)
         {
-            // Console.ReadLine() acts as prompt that watches and reads for user input
-            // Console.Write() displays on the same line
-            Console.Write("Enter your name: ");
-            string name = Console.ReadLine();
-            Console.Write("Enter your age: ");
-            string age = Console.ReadLine();
+            // Convert string to number
+            int num = Convert.ToInt32("32");
+            Console.WriteLine(num + 6);
 
-            Console.WriteLine("Hello {0} and you are {1} years old!", name, age);
+            // Perform user input and convert to number type and store it, finally display
+            Console.Write("Enter first number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter second number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(num1 + num2);
 
-            // Pause the console without closing
+            // Console.ReadLine() acts as prompt that watches, reads and returns for user input as string and also pauses the console without closing
             Console.ReadLine();
         }
     }
