@@ -10,13 +10,11 @@ namespace console_app_fcc
     {
         static void Main(string[] args)
         {
-            Student student1 = new Student("Sri", "Computer Science", 4.00m);
-            Student student2 = new Student("Sharm", "Business", 3.95m);
-            Student student3 = new Student("Raj", "Business", 3.45m);
+            Movie bahubali = new Movie("Bahubali: The Beginning", "Joss Whedon", "PG-13");
+            Movie ps1 = new Movie("Ponniyin Selvan - Chapter 1", "Maniratnam", "PG");
 
-            Console.WriteLine(student1.hasHonors());
-            Console.WriteLine(student2.hasHonors());
-            Console.WriteLine(student3.hasHonors());
+            Console.WriteLine(bahubali.Rating);
+            Console.WriteLine(ps1.Rating);
 
             // Console.ReadLine() acts as prompt that watches, reads and returns for user input as string and also pauses the console without closing
             Console.ReadLine();
