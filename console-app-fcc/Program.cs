@@ -10,19 +10,23 @@ namespace console_app_fcc
     {
         static void Main(string[] args)
         {
-            int[] oddNumbers = {1, 3, 6, 9, 12, 15, 18, 21};
-            for (int i = 0; i < oddNumbers.Length; i++)
-            {
-                Console.WriteLine(oddNumbers[i]);
-            }
-
-            for (int j = 1; j <= 5; j++)
-            {
-                Console.WriteLine(j);
-            }
+            // Building Exponent function
+            Console.WriteLine(GetPower(4,3));
 
             // Console.ReadLine() acts as prompt that watches, reads and returns for user input as string and also pauses the console without closing
             Console.ReadLine();
+        }
+
+        static double GetPower(int baseNum, int powerNum)
+        {
+            double result = baseNum;
+
+            for (int i = 1; i < powerNum; i++)
+            {
+                result = result * baseNum;
+            }
+
+            return result;
         }
     }
 }
