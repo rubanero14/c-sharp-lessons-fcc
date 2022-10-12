@@ -10,11 +10,18 @@ namespace console_app_fcc
     {
         static void Main(string[] args)
         {
-            Movie bahubali = new Movie("Bahubali: The Beginning", "Joss Whedon", "PG-13");
-            Movie ps1 = new Movie("Ponniyin Selvan - Chapter 1", "Maniratnam", "PG");
+            Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
 
-            Console.WriteLine(bahubali.Rating);
-            Console.WriteLine(ps1.Rating);
+            // accessing the static attribute of the class
+            Console.WriteLine(Song.songCount);
+
+            Song cholaChola = new Song("Chola Chola", "A.R. Rahman", 200);
+
+            // accessing the static attribute of the class using type/class
+            Console.WriteLine(Song.songCount);
+
+            // accessing the static attribute of the class using object
+            Console.WriteLine(kashmir.GetSongCount());
 
             // Console.ReadLine() acts as prompt that watches, reads and returns for user input as string and also pauses the console without closing
             Console.ReadLine();
