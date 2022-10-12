@@ -14,5 +14,20 @@ namespace console_app_fcc
         public string title;
         public string author;
         public int pages;
+
+        // Creating another constructor without any arguements passed into it, for manual attribute declaration
+        public Book()
+        {
+
+        }
+
+        // Constructor method for this class, the name of the constructor follow class name it serves
+        // Attributes for this class are dynamically assigned inside the constructor method by passing the values as arguements into the method
+        public Book(string Title, string Author, int Pages)
+        {
+            title = Title;
+            author = Author;
+            pages = Pages;
+        }
     }
 }
