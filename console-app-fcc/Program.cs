@@ -10,8 +10,11 @@ namespace console_app_fcc
     {
         static void Main(string[] args)
         {
-            // Accessing static method in a class
-            UsefulTools.SayHi("Raj");
+            Chef chef = new Chef();
+            chef.MakeSpecialDish();
+
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.MakeSpecialDish();
 
             // Console.ReadLine() acts as prompt that watches, reads and returns for user input as string and also pauses the console without closing
             Console.ReadLine();
